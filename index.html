@@ -31,12 +31,12 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-6 col-sm-6">
-                      <div class="showcase-left">
+                      <div id="render-img" class="showcase-left">
                           <img class="image-cover" style="width:90%" src="/img/2.jpg">
                       </div>
                   </div>
                   <div class="col-md-6 col-sm-6">
-                    <div class="showcase-right">
+                    <div id="render-txt" class="showcase-right">
                        <h3>Rendered in Vray - Next</h3>
                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nesciunt esse velit mollitia explicabo possimus voluptatibus placeat minus architecto id eum maxime sit? Eligendi molestias, laudantium maiores perferendis quisquam ad!</p>
                     </div>
@@ -55,14 +55,14 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-6">
-              <div class="showcase-right">
+              <div id="sketch-txt" class="showcase-right">
                 <h3>Rendered in Vray - Next</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nesciunt esse velit mollitia explicabo possimus voluptatibus placeat minus architecto id eum maxime sit? Eligendi molestias, laudantium maiores perferendis quisquam ad!</p>
              </div>
              <a class="btn btn-default btn-lg showcase-btn" href="#">Read More</a>
             </div>
             <div class="col-md-6 col-sm-6">
-              <div class="showcase-left">
+              <div  id="sketch-img" class="showcase-left">
                 <img class="image-cover" style="width:90%" src="/img/3.jpg">
             </div>
             </div>
@@ -80,15 +80,19 @@
           <div class="row">
             <div class="col-md-6 col-sm-6">
             <div class="info-left">
-              <h1>Images</h1>
+              <div class="cont">
+                <h1>Images</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quaerat rem quas blanditiis saepe omnis mollitia nemo numquam sunt ipsum.</p>
+              </div>
               <img class='image-info'src="/img/c1.jpg" alt="">
             </div>
             </div>
             <div class="col-md-6 col-sm-6">
               <div class="info-right">
-                <h1>Images</h1>
+                <div class="cont">
+                  <h1>Images</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quaerat rem quas blanditiis saepe omnis mollitia nemo numquam sunt ipsum.</p>
+                </div>
                 <img class='image-info'src="/img/c2.jpg" alt="">
               </div>
               </div>
@@ -127,5 +131,50 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+<script>
+  sr = new ScrollReveal();
+  sr.reveal('.navbar',{   
+      duration:3000,
+      origin:'bottom',
+    });   
+    sr.reveal('#render-img',{
+      duration:2000,
+      origin:'top',
+      distance:'300px',
+    });
+    sr.reveal('#render-txt',{
+      duration:2000,
+      origin:'right',
+      distance:'300px',
+    });
+    sr.reveal('#sketch-txt',{
+      duration:2000,
+      origin:'left',
+      distance:'300px',
+    });
+    sr.reveal('#sketch-img',{
+      duration:2000,
+      origin:'right',
+      distance:'300px',
+    });
+    sr.reveal('.info-left img',{
+      duration:3000,
+    });
+    sr.reveal('.info-left div.cont',{
+      duration:2000,
+      origin:'left',
+      distance:'300px',
+    });
+    sr.reveal('.info-right img',{
+      duration:3000,
+    });
+    sr.reveal('.info-right div.cont',{
+      duration:2000,
+      origin:'right',
+      distance:'300px',
+    });
+
+</script>
 </body>
 </html>
