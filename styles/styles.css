@@ -20,10 +20,6 @@ body{
 .nav-link   {
     color:#000!important;
 }
-/* .image-cover{
-    object-fit:cover;
-} */
-
 .showcase{
     margin-bottom:50px;
 }
@@ -39,3 +35,25 @@ body{
     padding:40px 0 30px 0;
     text-align:center;
 }
+
+.info{
+    margin-bottom: 50px;
+}
+
+.image-info{
+    width: 50%;
+    display: block;
+    margin:auto;
+}
+.info-left ,.info-right{
+    text-align: center;
+    margin:30px 0 30px 0;
+}
+
+.contact{
+    background: url(/img/bg.jpeg);
+    background-size: cover;
+    padding:30px 0 50px 0;   
+    position: relative;
+}
+
